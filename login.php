@@ -1,5 +1,8 @@
 <?php
 
+// Author: Abrar Mahmud
+
+
 session_start();
 
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
@@ -110,6 +113,7 @@ $conn->close();
             margin-top: 80px;
             margin-bottom: 80px;
             border-radius: 20px;
+            box-shadow: 0px 0px 28px 3px rgba(0, 0, 0, 0.75);
         }
     </style>
 </head>

@@ -1,5 +1,8 @@
 <?php
 
+// Author: Abrar Mahmud
+
+
 session_start();
 
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
@@ -11,6 +14,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: login.php");
     exit;
 }
+
+require_once "dbconnect.php";
 
 
 ?>
@@ -61,7 +66,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                 <div class="col-md-4">
                     <h2>Student List</h2>
                     <p>Show students as a list. In a sorted manner</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Go »</a></p>
+                    <p><a class="btn btn-secondary" href="admin_student_list.php" role="button">Go »</a></p>
                 </div>
             </div>
 
@@ -71,7 +76,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                 <div class="col-md-4">
                     <h2>Search Student</h2>
                     <p>Search for a student by Name or ID</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Go »</a></p>
+                    <p><a class="btn btn-secondary" href="admin_student_search.php" role="button">Go »</a></p>
                 </div>
             </div>
 

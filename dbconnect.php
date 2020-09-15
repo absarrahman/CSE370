@@ -1,5 +1,8 @@
 <?php
 
+// Author: Abrar Mahmud
+
+
 $server = "localhost";
 $username = "root";
 $password = "";
